@@ -1,0 +1,19 @@
+{
+	"title":"1. On the beach",
+	"elapse":3,
+	"content":[
+		{
+			"elapse":1,
+			"text":["Dark night, heavy rain...",
+				"the destination is barely able to see.",
+				"only can see the blurred shadows standing in the distance."]
+		},
+		{
+			"elapse":1,
+			"text":["After a few hours of crushing,",
+				"I arrived on the shore.",
+				"It seems that this rain will not stop until the sun rises."]
+		}]
+}
+
+

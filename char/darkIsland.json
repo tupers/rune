@@ -1,0 +1,12 @@
+{
+	"creature":[
+		{
+			"id":"Coast Walker",
+			"basic_health":9,
+			"basic_attack":2,
+			"basic_defence":0,
+			"basic_speed":0.5
+		}
+	]
+}
+
