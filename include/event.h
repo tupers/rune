@@ -13,19 +13,21 @@ class Event
 public:
 	typedef struct
 	{
-		Creature *sender;
-		Creature *receiver;
+		Creature *attacker;
+		Creature *defender;
 	}actionParams;
 	
 	Event();
 	virtual ~Event();
 private:
 
-	typedef void (*actionFun)(actionParams&);
-
+	typedef void (Event::*pActionFun)(actionParams&);
+	
+	//action: battle
 	void action_battle(actionParams &params);
+	
 
-	static map<string, actionFun> actionRegister;
+	static map<string, pActionFun> actionRegister;
 };
 
 #endif /* EVENT_H */

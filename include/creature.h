@@ -56,6 +56,8 @@ public:
 	
 	string info();
 	string getId(){return id;}
+	float getSpeed()const{return propertyList.find("basic_speed")->second.value;}
+	float getHealth()const{return propertyList.find("health")->second.value;}
 
 	virtual ~Creature();
 	
