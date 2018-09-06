@@ -8,11 +8,22 @@ map<string, Event::pActionFun> Event::actionRegister;
 			actionRegister[name] = &Event::fun;			\
 	}while(0)
 
+
 Event::Event()
 {
 	//add or check actionRegister;
 	registerAction("battle",action_battle);
 	
+}
+
+Event::~Event()
+{
+
+}
+
+void Event::eventLog(string &str)
+{
+	cout << "[" << typeid(this).name() << "]" << str << endl;
 }
 
 void Event::action_battle(actionParams &params)

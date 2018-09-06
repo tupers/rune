@@ -19,6 +19,8 @@ public:
 	
 	Event();
 	virtual ~Event();
+
+	void eventLog(string &str);
 private:
 
 	typedef void (Event::*pActionFun)(actionParams&);

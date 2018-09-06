@@ -121,7 +121,8 @@ void Creature::defence(const damageInfo &damage)
 		dmgs += dmg > 0 ? dmg : 0;
 	}
 
-	cout << "total damage :" << dmgs << " ! " << "from " << damage.source->getId() << endl;
+	//cout << "total damage :" << dmgs << " ! " << "from " << damage.source->getId() << endl;
 	//calculate
+	propertyList["health"].value -= dmgs;
 	return;
 }
