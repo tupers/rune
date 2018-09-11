@@ -9,8 +9,12 @@
 
 namespace Rune
 {
-       typedef void (*actionFunc)(int);
+	using namespace Creature::propertyUnit propertyUnit;
 
+       typedef void (*actionFunc)(Creature *src, Creature *dst, map<std::string, propertyUnit>& resultList);
+
+       //actions:
+       
 
        class actionRegister
        {
